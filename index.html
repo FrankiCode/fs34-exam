@@ -5,9 +5,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>eStartUp</title>
     <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    
+    <div class="container">
+        <header>
+            <div class="responsive">
+                <div class="row">
+                    <h1><span>e</span>Startup</h1>
+                    <nav class="navBar">
+                        <a href="">Home</a>
+                        <a href="">About</a>
+                        <a href="">Services</a>
+                        <a href="">Features</a>
+                        <a href="">Pricing</a>
+                        <a href="" class="dropdown-menu">Dropdown<i class="fa-solid fa-chevron-down"></i>
+                            <ul class="dropdown-hide">
+                                <li>this is dropdown</li>
+                                <li>this is dropdown</li>
+                                <li>this is dropdown</li>
+                                <li>this is dropdown</li>
+                            </ul>
+                        </a>
+                        <a href="">Contact</a>
+                    </nav>
+                    <i class="fa-solid fa-bars" id="faBars"></i>
+                    <div id="navBar" class="hide">
+                        <!-- <nav id="navBar"> -->
+                            <a href="">Home</a>
+                            <a href="">About</a>
+                            <a href="">Services</a>
+                            <a href="">Features</a>
+                            <a href="">Pricing</a>
+                            <a href="" class="dropdown-menu">Dropdown<i class="fa-solid fa-chevron-down"></i>
+                                <ul class="dropdown-hide">
+                                    <li>this is dropdown</li>
+                                    <li>this is dropdown</li>
+                                    <li>this is dropdown</li>
+                                    <li>this is dropdown</li>
+                                </ul>
+                            </a>
+                            <a href="">Contact</a>
+                        <!-- </nav> -->
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        
+        <main>
+            <div class="responsive">
+                <div class="main-container">
+                    <div class="main-inner-container">
+                        <div class="left-container" id="leftContainer">
+                        </div>
+                    <!-- ------------- -->
+                        <div class="right-container" id="rightContainer">
+                        </div>
+                    </div>
+                    <!-- ------------- -->
+                    <div class="main-cart-container" id="cartContainer">
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
 
 
     <script src="JS/home.js"></script>
