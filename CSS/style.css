@@ -1,0 +1,197 @@
+:root {
+    --myGreen: #88C273;
+    --mainBgColor:#D3F1DF;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 1320px;
+    width: 100%;
+    margin: auto;
+}
+
+
+header {
+    width: 100%;
+}
+
+
+header .row {
+    z-index: 1;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header span {
+    color: var(--myGreen);
+}
+
+header a {
+    margin-right: 20px;
+    color: #121212;
+}
+
+
+.dropdown-menu i {
+    font-size: 10px;
+    margin-left: 2px;
+    position: absolute;
+    top: 4px;
+    color: var(--myGreen);
+}
+
+header .dropdown-menu {
+    position: relative;
+    margin-right: 30px;
+}
+
+
+header .dropdown-hide {
+    display: none;
+}
+
+.dropdown-menu:hover .dropdown-hide {
+    display: grid;
+    position: absolute;
+    gap: 5px;
+    right: -10px;
+    width: 130px;
+    padding: 20px 7px 5px 7px;
+}
+
+.row .fa-bars {
+    display: none;
+}
+
+
+.hide {
+    z-index: -1;
+    position: absolute;
+    transition: 0.5s all;
+    top: -520%;
+    gap: 10px;
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    text-align: center;
+    flex-direction: column;
+    background-color: #fff;
+}
+
+/* ----------------- MAIN CONTAINER ----------------- */
+.main-container {
+    width: 100%;
+    background-color: var(--mainBgColor);
+}
+.main-inner-container {
+    gap: 20px;
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.left-container {
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.left-container h2 {
+    font-size: 40px;
+}
+
+.left-container p {
+    color: #595959;
+}
+
+
+.left-container .btns {
+    margin-top: 20px;
+}
+
+.left-container button:first-child {
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 10px 30px;
+    margin-right: 20px;
+    border-radius: 20px;
+    background-color: var(--myGreen);
+}
+.left-container .playBtn {
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 600;
+    padding-left: 40px;
+    position: relative;
+    color: var(--myGreen);
+    background-color: transparent;
+}
+
+.left-container button:last-child i {
+    left: 0;
+    top: 50%;
+    font-size: 30px;
+    position: absolute;
+    margin-right: 10px;
+    border-radius: 50%;
+    color: var(--mainBgColor);
+    border: 1px solid var(--myGreen);
+    transform: translateY(-50%);
+    background-color: var(--myGreen);
+}
+
+.desktop-Image img {
+    width: 100%;
+}
+
+
+/* ------------ MAIN CART CONTAINER ----------------- */
+
+
+.main-cart-container {
+    gap: 20px;
+    width: 80%;
+    margin: auto;
+    display: grid;
+    padding-bottom: 20px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.main-cart-container .carts {
+    gap: 30px;
+    width: 250px;
+    display: flex;
+    height: 250px;
+    border-radius: 10px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fff;
+}
+
+.carts h3 {
+    color: #595959;
+}
+
+.carts i {
+    font-size: 40px;
+    color: var(--myGreen);
+}
